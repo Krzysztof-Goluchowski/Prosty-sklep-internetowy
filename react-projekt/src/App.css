@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 p{
     margin: 0;
     align-items: center;
@@ -5,15 +9,19 @@ p{
 }
 
 .navHeader{
-    width: 100%;
-    height: 10%;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
     display: flex;
+    background-color: bisque;
 }
 
 .navButtons{
-    /*flex-grow: 1;*/
     float: right;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
 
 .navButton{
@@ -28,5 +36,40 @@ p{
     float: left;
 }
 
+.Temporary{
+    height: 10vh;
+}
+
+.FirstBlockHomePage{
+    height: 90vh;
+    width: 100vw;
+    background-color: saddlebrown;
+}
+
+.SecondBlockHomePage{
+    height: 90vh;
+    width: 100vw;
+    background-color: chartreuse;
+}
+
+.NiceBackgroundImage{
+    background-image: url("photos/landscape.jpg");
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    font-size: 70px;
+    color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
+
+.ThirdBlockHomePage{
+    height: 90vh;
+    width: 100vw;
+    background-color: aqua;
+}
