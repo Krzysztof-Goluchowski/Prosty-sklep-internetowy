@@ -1,14 +1,30 @@
+import React from "react";
+import {Link} from "react-router-dom";
 
 function NavBar() {
     return (
         <>
             <div className="navButtons">
-                <button type="button" className="btn btn-outline-dark navButton">Home</button>
-                <button type="button" className="btn btn-outline-dark navButton">Shop</button>
-                <button type="button" className="btn btn-outline-dark navButton">Trainers</button>
-                <button type="button" className="btn btn-outline-dark navButton">FAQ</button>
-                <button type="button" className="btn btn-outline-dark navButton">Contact</button>
-                <button type="button" className="btn btn-outline-dark navButton">Cart</button>
+                <ul className="nav nav-tabs">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Shop">Shop</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Trainers">Trainers</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link className="nav-link" to="/FAQ">FAQ</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Contact">Contact</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Cart">Cart</Link>
+                    </li>
+                </ul>
             </div>
         </>
     );
