@@ -1,7 +1,7 @@
 function SecondBlockHomePage() {
     return (
         <>
-            <div className="SecondBlockHomePage">
+            <div className="SecondBlockHomePage hidden">
 
             </div>
         </>

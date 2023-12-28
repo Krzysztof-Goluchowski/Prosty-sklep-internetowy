@@ -10,7 +10,7 @@ import NiceBackgroudImage from "./components/NiceBackgroudImage";
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <NavHeader>
             <Logo/>
             <NavBar/>
