@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from "./components/NavBar";
 import NavHeader from "./components/NavHeader";
 import Logo from "./components/Logo";
-import FirstBlockHomePage from "./components/FirstBlockHomePage";
+import ImageSlider from "./components/ImageSlider";
 import SecondBlockHomePage from "./components/SecondBlockHomePage";
 import Temporary from "./components/Temporary";
 import ThirdBlockHomePage from "./components/ThirdBlockHomePage";
@@ -16,7 +16,7 @@ function App() {
             <NavBar/>
         </NavHeader>
         <Temporary/>
-        <FirstBlockHomePage/>
+        <ImageSlider/>
         <SecondBlockHomePage/>
         <NiceBackgroudImage/>
         <ThirdBlockHomePage/>

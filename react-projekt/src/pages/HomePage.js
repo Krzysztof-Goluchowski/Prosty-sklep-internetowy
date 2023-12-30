@@ -4,7 +4,7 @@ import NavHeader from "../components/NavHeader";
 import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
 import Temporary from "../components/Temporary";
-import FirstBlockHomePage from "../components/FirstBlockHomePage";
+import ImageSlider from "../components/ImageSlider";
 import SecondBlockHomePage from "../components/SecondBlockHomePage";
 import NiceBackgroudImage from "../components/NiceBackgroudImage";
 import ThirdBlockHomePage from "../components/ThirdBlockHomePage";
@@ -27,6 +27,7 @@ function HomePage() {
         width: "100vw",
         height: "90vh",
         margin: "0 auto",
+        paddingRight: "15px",
     }
     return (
         <div>
@@ -36,7 +37,7 @@ function HomePage() {
             </NavHeader>
             <Temporary/>
             <div style={containerStyles}>
-                <FirstBlockHomePage slides={slides}/>
+                <ImageSlider slides={slides}/>
             </div>
             <SecondBlockHomePage/>
             <NiceBackgroudImage/>

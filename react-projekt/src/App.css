@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    padding-right: 17px;
 }
 
 p{
@@ -15,7 +16,7 @@ p{
     display: flex;
     background-color: bisque;
     z-index: 2;
-
+    padding-right: 17px;
 }
 
 a.nav-link{
@@ -70,7 +71,21 @@ a.nav-link{
     justify-content: center;
 }
 
+.react-slideshow-container{
+    height: 100vh;
+}
 
+.react-slideshow-wrapper{
+    height: 100vh;
+}
+
+.active{
+    height: 100vh;
+}
+
+.images-wrap{
+    height: 100vh;
+}
 
 .ThirdBlockHomePage{
     height: 90vh;
