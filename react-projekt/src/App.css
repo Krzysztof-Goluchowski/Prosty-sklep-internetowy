@@ -14,20 +14,20 @@ p{
     width: 100vw;
     height: 10vh;
     display: flex;
-    background-color: bisque;
-    z-index: 2;
+    background-color: #000000;
+    z-index: 11;
     padding-right: 17px;
 }
 
 a.nav-link{
-    color: black;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
 }
 
 .nav-tabs{
-    --bs-nav-tabs-border-color: black;
-    --bs-nav-tabs-link-hover-border-color: black;
+    --bs-nav-tabs-border-color: #ffffff;
+    --bs-nav-tabs-link-hover-border-color: #ffffff;
 }
 
 .navButtons{
@@ -51,9 +51,12 @@ a.nav-link{
 }
 
 .SecondBlockHomePage{
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
-    background-color: chartreuse;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -74,6 +77,7 @@ a.nav-link{
 .react-slideshow-container{
     height: 100vh;
 }
+
 
 .react-slideshow-wrapper{
     height: 100vh;
