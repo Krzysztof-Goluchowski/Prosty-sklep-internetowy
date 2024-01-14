@@ -58,7 +58,6 @@ function SecondBlockHomePage() {
         background: 'black',
         color: 'white',
         margin: '10px',
-
     };
     return (
         <>
