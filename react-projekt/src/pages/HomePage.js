@@ -8,6 +8,8 @@ import ImageSlider from "../components/ImageSlider";
 import SecondBlockHomePage from "../components/SecondBlockHomePage";
 import NiceBackgroudImage from "../components/NiceBackgroudImage";
 import ThirdBlockHomePage from "../components/ThirdBlockHomePage";
+import Footer from "../components/Footer";
+
 import image_1 from "../photos/image-1.jpg";
 import image_2 from "../photos/image-2.jpg";
 import image_3 from "../photos/image-3.jpg";
@@ -42,6 +44,7 @@ function HomePage() {
             <SecondBlockHomePage/>
             <NiceBackgroudImage/>
             <ThirdBlockHomePage/>
+            <Footer/>
         </div>
     );
 }
