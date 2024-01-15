@@ -40,10 +40,9 @@ function SecondBlockHomePage() {
     };
 
     const productPhoto ={
-        height: '400px',
-        width: '250px',
+        height: '45vh',
+        width: '28vh',
         margin: '10px',
-
     };
 
     const price ={

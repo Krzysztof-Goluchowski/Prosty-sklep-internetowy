@@ -25,6 +25,10 @@ function ThirdBlockHomePage() {
         background: 'black',
         margin: 'auto',
         padding: '2em',
+        transition: 'background 0.3s ease',
+        ':hover': {
+            background: 'green',
+        },
     };
 
     const nameOfPlan ={
@@ -46,7 +50,7 @@ function ThirdBlockHomePage() {
         listStyleType: 'none',
     };
     const itemFromList ={
-        fontSize: '1.75em',
+        fontSize: '3.3vh',
         color: 'white',
     };
     const buttonStyle ={
