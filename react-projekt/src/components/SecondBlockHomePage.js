@@ -7,10 +7,10 @@ import dopalacz from "../photos/dopalacz.webp";
 
 
 
+
 function SecondBlockHomePage() {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -35,7 +35,8 @@ function SecondBlockHomePage() {
 
     const product ={
         textAlign: 'center',
-        margin: '10px',
+        margin: '20px',
+        padding: '20px',
         boxShadow: '0 0 9px rgba(0,0,0,.185)',
     };
 
@@ -57,6 +58,9 @@ function SecondBlockHomePage() {
         background: 'black',
         color: 'white',
         margin: '10px',
+        '&:hover': {
+            background: 'white',
+        },
     };
     return (
         <>

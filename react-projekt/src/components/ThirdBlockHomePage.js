@@ -26,7 +26,11 @@ function ThirdBlockHomePage() {
         margin: 'auto',
         padding: '2em',
         transition: 'background 0.3s ease',
-        ':hover': {
+    };
+
+    const planHover = {
+        ...plan,
+        '&:hover': {
             background: 'green',
         },
     };
@@ -60,23 +64,12 @@ function ThirdBlockHomePage() {
         color: 'black',
         margin: '20px',
     };
-    const bestSeller ={
-        background: 'green',
-        fontSize: '1.4rem',
-        padding: '0.4em',
-        position: 'absolute',
-        // right: '50%',
-        textAlign: 'center',
-        // top: '10px',
-        transform: 'rotate(35deg)',
-        width: '200px',
-    };
     return (
         <>
             <div className="ThirdBlockHomePage">
                 <p style={mainWriting}>Wybierz plan idealny dla Ciebie!</p>
                 <div style={plansSpace}>
-                    <div style={plan}>
+                    <div style={planHover} id='plan'>
                         <h3 style={nameOfPlan}>Beginner</h3>
                         <p style={price}>$29 <span style={monthly}> /miesięcznie</span></p>
                         <hr style={hrLine}/>
@@ -112,7 +105,6 @@ function ThirdBlockHomePage() {
                         </p>
                     </div>
                     <div style={plan}>
-                        {/*<span style={bestSeller}>Best Seller!</span>*/}
                         <h3 style={nameOfPlan}>Regular</h3>
                         <p style={price}>$49 <span style={monthly}> /miesięcznie</span></p>
                         <hr style={hrLine}/>

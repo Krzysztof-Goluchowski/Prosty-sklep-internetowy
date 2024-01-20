@@ -2,6 +2,7 @@ import React from "react";
 import NavHeader from "../components/NavHeader";
 import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function Shop() {
     return (
@@ -10,6 +11,8 @@ function Shop() {
                 <Logo/>
                 <NavBar/>
             </NavHeader>
+
+            <Footer/>
         </>
     );
 }
