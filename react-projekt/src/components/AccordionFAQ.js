@@ -8,8 +8,8 @@ const AccordionFAQ = () => {
     const accordionStyles ={
         width: '50vw',
         height: '90vh',
-        margin: '10vh',
-        padding: '5vh',
+        margin: '10px',
+        padding: '10px',
     };
 
     const photoStyles ={
@@ -27,11 +27,15 @@ const AccordionFAQ = () => {
         textAlign: 'center',
         margin: '10px',
     }
+
+    const justPhoto ={
+        height: '100%',
+    }
     return(
 
         <div style={containerStyles}>
             <div style={photoStyles}>
-                <img src={leftImage}/>
+                <img src={leftImage} style={justPhoto}/>
             </div>
             <div style={accordionStyles}>
                 <h1 style={h1Style}>Często zadawane pytania</h1>
@@ -84,18 +88,7 @@ const AccordionFAQ = () => {
                             Suplementacja może być bezpieczna, ale zawsze warto skonsultować się z lekarzem przed rozpoczęciem nowego programu suplementacji, zwłaszcza jeśli masz istniejące problemy zdrowotne lub przyjmujesz inne leki.
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey={9}>
-                        <Accordion.Header><strong>Pytanie 9: Jakie są zalecenia dotyczące czasu spożywania suplementów w ciągu dnia?</strong></Accordion.Header>
-                        <Accordion.Body>
-                            Czas spożywania suplementów może zależeć od rodzaju suplementu. Na przykład, niektóre suplementy mogą być najlepiej spożywane przed, w trakcie lub po treningu, podczas gdy inne mogą być lepiej wchłaniane wraz z posiłkami.
-                        </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={10}>
-                        <Accordion.Header><strong>Pytanie 10: Czy suplementy są konieczne, czy wystarczy zdrowa dieta?</strong></Accordion.Header>
-                        <Accordion.Body>
-                            Zdrowa i zrównoważona dieta jest fundamentem, ale w niektórych przypadkach suplementy mogą być pomocne do uzupełnienia niedoborów składników odżywczych. Ważne jest jednak, aby nie zastępować suplementami różnorodnej diety.
-                        </Accordion.Body>
-                    </Accordion.Item>
+                    
                 </Accordion>
             </div>
         </div>
