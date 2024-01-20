@@ -10,6 +10,11 @@ const AccordionFAQ = () => {
         height: '90vh',
         margin: '10px',
         padding: '10px',
+        display: 'flex',
+        textAlign: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'center',
     };
 
     const photoStyles ={
@@ -26,6 +31,7 @@ const AccordionFAQ = () => {
     const h1Style ={
         textAlign: 'center',
         margin: '10px',
+        // display: 'flex',
     }
 
     const justPhoto ={
@@ -37,6 +43,7 @@ const AccordionFAQ = () => {
             <div style={photoStyles}>
                 <img src={leftImage} style={justPhoto}/>
             </div>
+
             <div style={accordionStyles}>
                 <h1 style={h1Style}>Często zadawane pytania</h1>
                 <Accordion>
