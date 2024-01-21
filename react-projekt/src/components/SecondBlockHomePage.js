@@ -1,10 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import whey1 from "../photos/Whey1.jpg";
-import whey2 from "../photos/whey2.webp";
-import whey3 from "../photos/whey3.png";
-import dopalacz from "../photos/dopalacz.webp";
-
+import {ShopContext} from "./shop-context";
+import { PRODUCTS } from "../products";
+import React, {useContext} from "react";
 
 
 
@@ -33,7 +31,7 @@ function SecondBlockHomePage() {
         fontWeight: 'bold',
     };
 
-    const product ={
+    const productStyle ={
         textAlign: 'center',
         margin: '20px',
         padding: '20px',
@@ -62,44 +60,29 @@ function SecondBlockHomePage() {
             background: 'white',
         },
     };
+
+    const { addToCart, cartItems } = useContext(ShopContext);
+
+
+
     return (
         <>
             <p style={buyWriting}>Kup coś w naszym sklepie!</p>
             <div className="SecondBlockHomePage hidden">
 
                 <Carousel responsive={responsive}>
-                    <div style={product}>
-                        <img style={productPhoto} src={whey1}/>
-                        <h2>białko dla byków</h2>
-                        <p style={price}> $20.99</p>
-                        <p>
-                            <button style={buttonStyle}>Add to Cart</button>
-                        </p>
-                    </div>
-                    <div style={product}>
-                        <img style={productPhoto} src={whey2}/>
-                        <h2>białko dla profesjonalistów</h2>
-                        <p style={price}> $40.99</p>
-                        <p>
-                            <button style={buttonStyle}>Add to Cart</button>
-                        </p>
-                    </div>
-                    <div style={product}>
-                        <img style={productPhoto} src={whey3}/>
-                        <h2>białko dla studentów</h2>
-                        <p style={price}> $10.99</p>
-                        <p>
-                            <button style={buttonStyle}>Add to Cart</button>
-                        </p>
-                    </div>
-                    <div style={product}>
-                        <img style={productPhoto} src={dopalacz}/>
-                        <h2>Dopalacz z Indii</h2>
-                        <p style={price}> $99.99</p>
-                        <p>
-                            <button style={buttonStyle}>Add to Cart</button>
-                        </p>
-                    </div>
+                    {PRODUCTS.map((product) => (
+                        <div key={product.id} style={productStyle}>
+                            <img src={product.productImage} alt={product.productName} style={productPhoto} />
+                            <p style={price}>{product.productName}</p>
+                            <p style={price}>{`$${product.price}`}</p>
+                            <p>
+                                <button style={buttonStyle} onClick={() => addToCart(product.id)}>
+                                    Add to Cart {cartItems[product.id] > 0 && <> ({cartItems[product.id]}) </>}
+                                 </button>
+                            </p>
+                        </div>
+                    ))}
                 </Carousel>
             </div>
         </>

@@ -9,31 +9,57 @@ import HomePage from "./pages/HomePage";
 import Shop from "./pages/Shop";
 import Trainers from "./pages/Trainers";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {ShopContextProvider} from "./components/shop-context";
 
 const router = createBrowserRouter([
+
     {
         path: "/",
-        element: <HomePage/>,
+        element: (
+            <ShopContextProvider>
+                <HomePage/>
+            </ShopContextProvider>
+        ),
     },
     {
         path: "Cart",
-        element: <Cart/>,
+        element: (
+            <ShopContextProvider>
+                <Cart/>
+            </ShopContextProvider>
+        ),
     },
     {
         path: "Contact",
-        element: <Contact/>,
+        element: (
+            <ShopContextProvider>
+            <Contact/>
+            </ShopContextProvider>
+        ),
     },
     {
         path: "FAQ",
-        element: <FAQ/>,
+        element: (
+            <ShopContextProvider>
+            <FAQ/>
+            </ShopContextProvider>
+        ),
     },
     {
         path: "Shop",
-        element: <Shop/>,
+        element: (
+            <ShopContextProvider>
+            <Shop/>
+            </ShopContextProvider>
+        ),
     },
     {
         path: "Trainers",
-        element: <Trainers/>,
+        element: (
+            <ShopContextProvider>
+                <Trainers/>
+            </ShopContextProvider>
+        ),
     },
 
 ]);
