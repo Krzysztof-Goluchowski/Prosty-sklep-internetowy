@@ -63,6 +63,9 @@ const Footer = () => {
                         <FooterLink href="#">
                             Mechowo
                         </FooterLink>
+                        <FooterLink href="#">
+                            Szczyrzyc
+                        </FooterLink>
                     </Column>
                     <Column>
                         <Heading>Social Media</Heading>
