@@ -9,23 +9,27 @@ export const PRODUCTS = [
         productName: "Białko dla byków",
         price: 20.99,
         productImage: product1,
+        category: "Białko"
     },
     {
         id: 2,
         productName: "Białko dla profesjonalistów",
         price: 40.99,
         productImage: product2,
+        category: "Białko"
     },
     {
         id: 3,
         productName: "Białko dla studentów",
         price: 10.99,
         productImage: product3,
+        category: "Białko"
     },
     {
         id: 4,
         productName: "Dopalacz z Indii",
         price: 99.99,
         productImage: product4,
+        category: "Dopalacze"
     },
 ]

@@ -3,6 +3,8 @@ import NavHeader from "../components/NavHeader";
 import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import ShopContent from "../components/ShopContent";
+import Temporary from "../components/Temporary";
 
 function Shop() {
     return (
@@ -11,7 +13,8 @@ function Shop() {
                 <Logo/>
                 <NavBar/>
             </NavHeader>
-
+            <Temporary/>
+            <ShopContent/>
             <Footer/>
         </>
     );
