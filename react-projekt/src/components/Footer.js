@@ -16,6 +16,7 @@ const Footer = () => {
                     color: "green",
                     textAlign: "center",
                     marginTop: "10px",
+                    marginBottom: "110px"
                 }}
             >
                 “The body achieves what the mind believes”

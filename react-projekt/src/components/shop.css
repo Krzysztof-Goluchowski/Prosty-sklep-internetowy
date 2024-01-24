@@ -1,15 +1,6 @@
-.chadQuote {
-    /*background: url("../photos/chadquote.png");*/
-    height: 100px;
-    width: 100px;
-    background-image: url("../photos/chadquote.png");
-
-}
-
 .chad {
     height: auto;
     width: 100vw;
-    /*object-fit: contain;*/
 }
 
 .shopContainer {
@@ -26,13 +17,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 50px;
-    /*max-width: 80vw;*/
     width: 70vw;
     margin-bottom: 20vh;
 }
 
 .shopFilters {
-    /*height: 300px;*/
     display: flex;
     column-gap: 20px;
     margin-top: 200px;
@@ -64,7 +53,6 @@
 }
 
 .productShop {
-    /*margin: 50px;*/
     height: auto;
     width: 20vw;
     background-color: #fdfdfd;
@@ -81,9 +69,4 @@
     width: 60%;
     height: 60%;
     padding: 20px;
-    /*object-fit: scale-down;*/
 }
-
-/*.cartButton {*/
-/*    width:*/
-/*}*/
