@@ -8,7 +8,7 @@ export const TRAINERS = [
         name: "Michael Cruise",
         photo: trainer1,
         info: "Calisthenics Athlete",
-        bio: "Michael Cruise, our calisthenics and gymnastics expert at [Gym Name], " +
+        bio: "Michael Cruise, our calisthenics and gymnastics expert at Siłka Byki, " +
             "seamlessly blends his background in competitive gymnastics " +
             "with a passion for bodyweight training. " +
             "From mastering handstands to guiding beginners, Michael's approach prioritizes " +
@@ -22,7 +22,7 @@ export const TRAINERS = [
         name: "Alexandra Kovachenko",
         photo: trainer2,
         info: "Fitness & Yoga Passionate",
-        bio: "As [Gym Name]'s fitness and yoga specialist, " +
+        bio: "As Siłka Byki's fitness and yoga specialist, " +
             "Alexandra Kovachenko brings a holistic approach to wellness, " +
             "combining strength training with the serenity of yoga. " +
             "Her sessions cater to diverse fitness levels, " +
@@ -36,7 +36,7 @@ export const TRAINERS = [
         name: "Mariusz Pudzianowski",
         photo: pudzian,
         info: "Retired Strongman",
-        bio: "Meet Mariusz Pudzianowski, our retired strongman legend, at [Gym Name]. " +
+        bio: "Meet Mariusz Pudzianowski, our retired strongman legend, at Siłka Byki. " +
             "Beyond his remarkable achievements in heavyweight competitions, " +
             "Mariusz's current focus is on promoting a healthy lifestyle. " +
             "With a wealth of expertise in strength and conditioning, " +
