@@ -10,6 +10,7 @@ import Shop from "./pages/Shop";
 import Trainers from "./pages/Trainers";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {ShopContextProvider} from "./components/shop-context";
+import ShopEdit from "./pages/ShopEdit";
 
 const router = createBrowserRouter([
 
@@ -58,6 +59,14 @@ const router = createBrowserRouter([
         element: (
             <ShopContextProvider>
                 <Trainers/>
+            </ShopContextProvider>
+        ),
+    },
+    {
+        path: "Shop/Edit",
+        element: (
+            <ShopContextProvider>
+                <ShopEdit/>
             </ShopContextProvider>
         ),
     },

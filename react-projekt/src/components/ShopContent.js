@@ -3,6 +3,7 @@ import {PRODUCTS} from "../products";
 import {ShopContext} from "./shop-context";
 import chad from "../photos/chadquote2.png";
 import React, {useContext, useState} from "react";
+import {Link} from "react-router-dom";
 
 function ShopContent() {
     const categories = ["Wszystko", "Białko", "Dopalacze"];
@@ -20,7 +21,7 @@ function ShopContent() {
             : PRODUCTS.filter((product) => product.category === selectedCategory);
 
     return (<div className="shopContainer">
-        <img src = {chad} className="chad"/>
+        <img src={chad} className="chad"/>
         <div className="shopFilters">
             {categories.map((category) => (
                 <button
@@ -39,13 +40,14 @@ function ShopContent() {
                     <p className="price">{product.productName}</p>
                     <p className="price">{`$${product.price}`}</p>
                     <p>
-                        <button className="filterButton" onClick={() => addToCart(product.id)}>
+                        <button className="cartButton" onClick={() => addToCart(product.id)}>
                             Add to Cart {cartItems[product.id] > 0 && <> ({cartItems[product.id]}) </>}
                         </button>
                     </p>
                 </div>
             ))}
         </div>
+        <Link className="cartButton" to="/Shop/Edit">EDIT</Link>
 
     </div>);
 }
