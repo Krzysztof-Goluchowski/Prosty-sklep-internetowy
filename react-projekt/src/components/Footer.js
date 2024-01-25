@@ -13,10 +13,11 @@ const Footer = () => {
         <Box>
             <h1
                 style={{
-                    color: "green",
+                    color: "#fd5f26",
                     textAlign: "center",
                     marginTop: "10px",
-                    marginBottom: "110px"
+                    marginBottom: "110px",
+                    fontFamily: "Lucida Calligraphy"
                 }}
             >
                 “The body achieves what the mind believes”

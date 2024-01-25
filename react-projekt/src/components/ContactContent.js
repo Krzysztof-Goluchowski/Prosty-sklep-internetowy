@@ -2,6 +2,7 @@ import "./contact.css";
 import phone from "../photos/phone.png";
 import address from "../photos/address.png";
 import mail from "../photos/mail.png";
+import {ADDRESS} from "../address";
 
 function ContactContent() {
     return (
@@ -18,11 +19,18 @@ function ContactContent() {
                   <div className="footer"/>
               </div>
               <div>
-                  <div className="contactDetails">
-                      <img className="contactIcon" src={address}/>
-                      <h3 className="contactTitle">Meet us</h3>
-                      <p className="contactText">Kawiory 21, Kraków</p>
-                  </div>
+                  {/*<div className="contactDetails">*/}
+                      <a
+                          href={ADDRESS}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="contactDetails"
+                      >
+                          <img className="contactIcon" src={address}/>
+                          <h3 className="contactTitle">Meet us</h3>
+                          <p className="contactText">Kawiory 21, Kraków</p>
+                      </a>
+                  {/*</div>*/}
                   <div className="footer"/>
               </div>
               <div>
