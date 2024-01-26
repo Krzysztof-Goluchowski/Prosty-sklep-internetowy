@@ -53,6 +53,10 @@ a.nav-link:hover{
     float: left;
 }
 
+.logoImage {
+    height: 90%;
+}
+
 .Temporary{
     height: 10vh;
 }
