@@ -51,6 +51,7 @@
     color: #e3e3e3;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 
     text-decoration: none;
     display: flex;
@@ -105,4 +106,24 @@
 
 input {
     margin-bottom: 2vh;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    font-size: 20px;
+    /*margin: 10px;*/
+}
+
+.discount {
+    background-color: #fd5f26;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }

@@ -1,6 +1,7 @@
 import "./shop.css";
 import {PRODUCTS} from "../products";
 import React, {useContext, useState} from "react";
+import {Link} from "react-router-dom";
 
 function ShopContentEdit() {
     const [editingIndex, setEditingIndex] = useState(-1);
@@ -26,6 +27,9 @@ function ShopContentEdit() {
                 <div key={product.id} className="productShop">
                     <img src={product.productImage} alt={product.productName} className="productPhoto"/>
                     <p className="price">{product.productName}</p>
+                    <p>Initial price: </p>
+                    <p className="price">{`$${product.initialPrice}`}</p>
+                    <p>Current price: </p>
                     <p className="price">{`$${product.price}`}</p>
                     <strong>Cena: </strong>
                     {editingIndex === index ? (
@@ -48,9 +52,7 @@ function ShopContentEdit() {
                 </div>
             ))}
         </div>
-        <button className="cartButton">
-            EDIT
-        </button>
+        <Link className="cartButton" to="/Shop">RETURN TO THE SHOP</Link>
     </div>);
 }
 
